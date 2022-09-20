@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appfrm.putcategoria">
+    <Grid>
+        <Image Source="metodos.jpg" Aspect="AspectFill" />
+        <Grid>
+            <StackLayout Padding="15,0">
+                <Entry x:Name="idcategoria" Placeholder="ID Categoria" FontSize="Medium" Keyboard="Text" TextChanged="idcategoria_TextChanged"/>
+                <Entry x:Name="nombre" Placeholder="Nombre" FontSize="Medium" Keyboard="Text" />
+                <Entry x:Name="abreviacion" Placeholder="Abreviacion" FontSize="Medium" Keyboard="Text" />
+                <Grid>
+                    <Button Text="Enviar" Clicked="Button_Clicked" CornerRadius="20" TextColor="#FF4081" BackgroundColor="White" FontAttributes="Bold"/>
+                </Grid>
+                <Label Text="" x:Name="resultado" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

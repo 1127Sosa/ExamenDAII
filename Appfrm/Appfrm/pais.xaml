@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appfrm.pais">
+    <Grid>
+        <Image Source="fondo.jpg" Aspect="AspectFill" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="logo2.png" HeightRequest="170" WidthRequest="170"/>
+
+            <StackLayout Grid.Row="1" Padding="30,0">
+                <Label Text="App Api" FontSize="Large"
+                                              VerticalOptions="Center" 
+                                              HorizontalOptions="Center"/>
+                <Button x:Name="getpais" Text="POST" Clicked="getpais_Clicked" CornerRadius="20" TextColor="White" BackgroundColor="#041C32" FontAttributes="Bold"/>
+                <Button x:Name="deletepais" Text="DELETE" Clicked="deletepais_Clicked" CornerRadius="20" TextColor="White" BackgroundColor="#04293A" FontAttributes="Bold"/>
+                <Button x:Name="GetPais" Text="GET" Clicked="GetPais_Clicked_1" CornerRadius="20" TextColor="White" BackgroundColor="#064663" FontAttributes="Bold"/>
+                <Button x:Name="putPais" Text="PUT" Clicked="putPais_Clicked" CornerRadius="20" TextColor="White" BackgroundColor="#1D5C63" FontAttributes="Bold"/>
+            </StackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>
